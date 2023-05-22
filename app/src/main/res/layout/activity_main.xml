@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Ingrese un número" />
+
+    <ProgressBar
+        android:id="@+id/pbProgreso"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumero"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="0"/>
+
+    <DatePicker
+        android:id="@+id/dpFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pbProgreso"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:calendarViewShown="false"
+        android:startYear="2000"
+        android:endYear="2100"
+        android:datePickerMode="spinner"/>
+
+    <TimePicker
+        android:id="@+id/tpHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpFecha"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner"
+        android:headerBackground="#fff"/>
+
+    <TextView
+        android:id="@+id/lblFechaHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tpHora"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text=""/>
+
+</RelativeLayout>
